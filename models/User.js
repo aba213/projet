@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const schema=mongoose.Schema
-const UserSchema=new schema({
+const Schema=mongoose.Schema
+const UserSchema=new Schema({
 name: {
     type: String,
     require: true,
@@ -17,6 +17,19 @@ password: {
     type: String,
     require: true,
 },
+enseignent:{type:Boolean},
+diplome: {
+    type: String,
+    require: true,
+},
+competence: {
+    type: String,
+    require: true,
+},
+experience: {
+    type: String,
+    require: true,
+}
 
 
 });

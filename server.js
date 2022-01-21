@@ -1,5 +1,5 @@
 const express=require("express");
-const { connect } = require("mongoose");
+const  {connect}  = require("mongoose");
  const connectDB=require('./config/dbconnect')
 const app =express();
 require("dotenv").config();
@@ -9,7 +9,9 @@ connectDB();
 
 //routes
 app.use(express.json());
-app.use("/user",require("./routes/user"))
+app.use("/User",require("./routes/User"));
+app.use("/Posts",require("./routes/Posts"));
+app.use("/Cours",require("./routes/Cours"));
 //server
 const PORT=process.env.PORT;
 

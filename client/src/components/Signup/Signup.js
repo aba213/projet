@@ -1,7 +1,7 @@
 import React,{ useState }from 'react';
 import { useDispatch } from "react-redux"
 import "./sign_up.css";
-import { registerUser ,loginUser} from "../JS/actions/user";
+import { registerUser ,loginUser} from "../JS/actions/User/User";
 import { useNavigate } from"react-router-dom";
 
 
